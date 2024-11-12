@@ -1,46 +1,59 @@
 /* styles.css */
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  h1, h2 {
-    color: #333;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    gap: 10px;
-  }
-  
-  form label {
-    font-weight: bold;
-  }
-  
-  table {
-    width: 100%;
-    max-width: 600px;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table, th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    text-align: center;
-  }
-  
-  .chart-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 30px 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f2f8fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #a7d5d6;
+  width: 100%;
+}
+
+h1 {
+  color: #2d7373;
+}
+
+main {
+  padding: 20px;
+  max-width: 600px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #2d7373;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #204b4b;
+}
+
+#stress-survey label, #stress-survey select {
+  display: block;
+  margin-top: 10px;
+}
+
+#survey-result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #2d7373;
+}

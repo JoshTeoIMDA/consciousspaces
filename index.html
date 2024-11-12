@@ -3,59 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Well-Being Tracker</title>
+  <title>Mental Well-being App</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Well-Being Tracker</h1>
 
-  <!-- Input Form -->
-  <form id="wellBeingForm">
-    <label for="date">Date:</label>
-    <input type="date" id="date" required>
+  <header>
+    <h1>Mental Well-being Hub</h1>
+    <p>Your space to unwind, learn, and grow.</p>
+  </header>
 
-    <label for="mood">Mood (1-10):</label>
-    <input type="number" id="mood" min="1" max="10" required>
+  <main>
+    <!-- Daily Tip Section -->
+    <section id="daily-tips">
+      <h2>Daily Wellness Tip</h2>
+      <p id="tip-content">Take a deep breath and focus on the present moment.</p>
+      <button onclick="showNewTip()">Get a New Tip</button>
+    </section>
 
-    <label for="stress">Stress (1-10):</label>
-    <input type="number" id="stress" min="1" max="10" required>
+    <!-- Mindfulness & Relaxation Activities Section -->
+    <section id="activities">
+      <h2>Mindfulness & Relaxation Activities</h2>
+      <ul id="activity-list">
+        <li onclick="showActivityDetail('4-7-8 Breathing')">4-7-8 Breathing (inhale for 4, hold for 7, exhale for 8)</li>
+        <li onclick="showActivityDetail('Box Breathing')">Box Breathing (inhale, hold, exhale, hold - each for 4 counts)</li>
+        <li onclick="showActivityDetail('Alternate Nostril Breathing')">Alternate Nostril Breathing</li>
+        <li onclick="showActivityDetail('Basic Yoga Poses')">Basic Yoga Poses (Downward Dog, Child's Pose)</li>
+        <li onclick="showActivityDetail('Body Scan Meditation')">Body Scan Meditation</li>
+        <li onclick="showActivityDetail('Mindful Eating')">Mindful Eating (focus on each bite and the flavors)</li>
+        <li onclick="showActivityDetail('Walking in Nature')">Walking in Nature (focus on the sights, sounds, and smells)</li>
+        <li onclick="showActivityDetail('Outdoor Meditation')">Outdoor Meditation (sit in a quiet spot outside)</li>
+        <li onclick="showActivityDetail('Sun Salutation')">Sun Salutation at Sunrise or Sunset</li>
+      </ul>
+    </section>
 
-    <label for="sleepQuality">Sleep Quality:</label>
-    <select id="sleepQuality" required>
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select>
+    <!-- Stress Coping Survey Section -->
+    <section id="stress-survey">
+      <h2>Stress Coping Survey</h2>
+      <form id="survey-form">
+        <label>How often do you feel stressed at work?</label>
+        <select name="work-stress" required>
+          <option value="never">Never</option>
+          <option value="sometimes">Sometimes</option>
+          <option value="often">Often</option>
+          <option value="always">Always</option>
+        </select>
 
-    <label for="socialEngagement">Social Engagement:</label>
-    <select id="socialEngagement" required>
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select>
+        <label>How well are you managing stress in your personal life?</label>
+        <select name="personal-stress" required>
+          <option value="well">Very Well</option>
+          <option value="average">Average</option>
+          <option value="poorly">Poorly</option>
+          <option value="not-at-all">Not at All</option>
+        </select>
 
-    <button type="button" onclick="addEntry()">Add Entry</button>
-  </form>
+        <label>How often do you take time for self-care activities?</label>
+        <select name="self-care" required>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="rarely">Rarely</option>
+          <option value="never">Never</option>
+        </select>
 
-  <!-- Data Table -->
-  <h2>Entries</h2>
-  <table id="dataTable">
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Mood</th>
-        <th>Stress</th>
-        <th>Sleep Quality</th>
-        <th>Social Engagement</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+        <label>How would you rate your sleep quality?</label>
+        <select name="sleep-quality" required>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="fair">Fair</option>
+          <option value="poor">Poor</option>
+        </select>
 
-  <!-- Chart Area -->
-  <div class="chart-container">
-    <canvas id="moodChart"></canvas>
-  </div>
+        <label>How often do you engage in physical exercise?</label>
+        <select name="exercise-frequency" required>
+          <option value="daily">Daily</option>
+          <option value="few-times-week">A few times a week</option>
+          <option value="rarely">Rarely</option>
+          <option value="never">Never</option>
+        </select>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <button type="button" onclick="calculateSurveyResults()">Submit</button>
+      </form>
+      <p id="survey-result"></p>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
