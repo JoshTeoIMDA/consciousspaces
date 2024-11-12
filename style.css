@@ -76,3 +76,25 @@ button:hover {
   font-weight: bold;
   color: #ffd54f;
 }
+/* Styles for grid layout in activities section */
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.activity-item {
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  color: #81d4fa;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.activity-item:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
