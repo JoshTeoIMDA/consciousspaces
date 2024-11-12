@@ -14,77 +14,83 @@
   </header>
 
   <main>
-    <!-- Daily Tip Section -->
-    <section id="daily-tips">
-      <h2>Daily Wellness Tip</h2>
-      <p id="tip-content">Take a deep breath and focus on the present moment.</p>
-      <button onclick="showNewTip()">Get a New Tip</button>
-    </section>
+    <div class="card">
+      <!-- Daily Tip Section -->
+      <section id="daily-tips">
+        <h2>Daily Wellness Tip</h2>
+        <p id="tip-content">Take a deep breath and focus on the present moment.</p>
+        <button onclick="showNewTip()">Get a New Tip</button>
+      </section>
+    </div>
 
-    <!-- Mindfulness & Relaxation Activities Section -->
-    <section id="activities">
-      <h2>Mindfulness & Relaxation Activities</h2>
-      <ul id="activity-list">
-        <li onclick="showActivityDetail('4-7-8 Breathing')">4-7-8 Breathing (inhale for 4, hold for 7, exhale for 8)</li>
-        <li onclick="showActivityDetail('Box Breathing')">Box Breathing (inhale, hold, exhale, hold - each for 4 counts)</li>
-        <li onclick="showActivityDetail('Alternate Nostril Breathing')">Alternate Nostril Breathing</li>
-        <li onclick="showActivityDetail('Basic Yoga Poses')">Basic Yoga Poses (Downward Dog, Child's Pose)</li>
-        <li onclick="showActivityDetail('Body Scan Meditation')">Body Scan Meditation</li>
-        <li onclick="showActivityDetail('Mindful Eating')">Mindful Eating (focus on each bite and the flavors)</li>
-        <li onclick="showActivityDetail('Walking in Nature')">Walking in Nature (focus on the sights, sounds, and smells)</li>
-        <li onclick="showActivityDetail('Outdoor Meditation')">Outdoor Meditation (sit in a quiet spot outside)</li>
-        <li onclick="showActivityDetail('Sun Salutation')">Sun Salutation at Sunrise or Sunset</li>
-      </ul>
-    </section>
+    <div class="card">
+      <!-- Mindfulness & Relaxation Activities Section -->
+      <section id="activities">
+        <h2>Mindfulness & Relaxation Activities</h2>
+        <ul id="activity-list">
+          <li onclick="showActivityDetail('4-7-8 Breathing')">4-7-8 Breathing (inhale for 4, hold for 7, exhale for 8)</li>
+          <li onclick="showActivityDetail('Box Breathing')">Box Breathing (inhale, hold, exhale, hold - each for 4 counts)</li>
+          <li onclick="showActivityDetail('Alternate Nostril Breathing')">Alternate Nostril Breathing</li>
+          <li onclick="showActivityDetail('Basic Yoga Poses')">Basic Yoga Poses (Downward Dog, Child's Pose)</li>
+          <li onclick="showActivityDetail('Body Scan Meditation')">Body Scan Meditation</li>
+          <li onclick="showActivityDetail('Mindful Eating')">Mindful Eating (focus on each bite and the flavors)</li>
+          <li onclick="showActivityDetail('Walking in Nature')">Walking in Nature (focus on the sights, sounds, and smells)</li>
+          <li onclick="showActivityDetail('Outdoor Meditation')">Outdoor Meditation (sit in a quiet spot outside)</li>
+          <li onclick="showActivityDetail('Sun Salutation')">Sun Salutation at Sunrise or Sunset</li>
+        </ul>
+      </section>
+    </div>
 
-    <!-- Stress Coping Survey Section -->
-    <section id="stress-survey">
-      <h2>Stress Coping Survey</h2>
-      <form id="survey-form">
-        <label>How often do you feel stressed at work?</label>
-        <select name="work-stress" required>
-          <option value="never">Never</option>
-          <option value="sometimes">Sometimes</option>
-          <option value="often">Often</option>
-          <option value="always">Always</option>
-        </select>
+    <div class="card">
+      <!-- Stress Coping Survey Section -->
+      <section id="stress-survey">
+        <h2>Stress Coping Survey</h2>
+        <form id="survey-form">
+          <label>How often do you feel stressed at work?</label>
+          <select name="work-stress" required>
+            <option value="never">Never</option>
+            <option value="sometimes">Sometimes</option>
+            <option value="often">Often</option>
+            <option value="always">Always</option>
+          </select>
 
-        <label>How well are you managing stress in your personal life?</label>
-        <select name="personal-stress" required>
-          <option value="well">Very Well</option>
-          <option value="average">Average</option>
-          <option value="poorly">Poorly</option>
-          <option value="not-at-all">Not at All</option>
-        </select>
+          <label>How well are you managing stress in your personal life?</label>
+          <select name="personal-stress" required>
+            <option value="well">Very Well</option>
+            <option value="average">Average</option>
+            <option value="poorly">Poorly</option>
+            <option value="not-at-all">Not at All</option>
+          </select>
 
-        <label>How often do you take time for self-care activities?</label>
-        <select name="self-care" required>
-          <option value="daily">Daily</option>
-          <option value="weekly">Weekly</option>
-          <option value="rarely">Rarely</option>
-          <option value="never">Never</option>
-        </select>
+          <label>How often do you take time for self-care activities?</label>
+          <select name="self-care" required>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="rarely">Rarely</option>
+            <option value="never">Never</option>
+          </select>
 
-        <label>How would you rate your sleep quality?</label>
-        <select name="sleep-quality" required>
-          <option value="excellent">Excellent</option>
-          <option value="good">Good</option>
-          <option value="fair">Fair</option>
-          <option value="poor">Poor</option>
-        </select>
+          <label>How would you rate your sleep quality?</label>
+          <select name="sleep-quality" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+          </select>
 
-        <label>How often do you engage in physical exercise?</label>
-        <select name="exercise-frequency" required>
-          <option value="daily">Daily</option>
-          <option value="few-times-week">A few times a week</option>
-          <option value="rarely">Rarely</option>
-          <option value="never">Never</option>
-        </select>
+          <label>How often do you engage in physical exercise?</label>
+          <select name="exercise-frequency" required>
+            <option value="daily">Daily</option>
+            <option value="few-times-week">A few times a week</option>
+            <option value="rarely">Rarely</option>
+            <option value="never">Never</option>
+          </select>
 
-        <button type="button" onclick="calculateSurveyResults()">Submit</button>
-      </form>
-      <p id="survey-result"></p>
-    </section>
+          <button type="button" onclick="calculateSurveyResults()">Submit</button>
+        </form>
+        <p id="survey-result"></p>
+      </section>
+    </div>
   </main>
 
   <script src="script.js"></script>
