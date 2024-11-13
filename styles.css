@@ -103,7 +103,7 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
 }
 
@@ -112,9 +112,10 @@ header nav a {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 600px;
+    width: 400px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
+    margin: 30px; /* Adjust margin to control space around each card */
 }
 
 .resource-card:hover {
@@ -170,7 +171,7 @@ main h2 {
 main p {
     font-size: 1.2em;
     color: #555; /* Optional: Subtle color for the paragraph */
-    max-width: 300px; /* Limits paragraph width for better readability */
+    max-width: 700px; /* Limits paragraph width for better readability */
     margin: 10px auto; /* Centers the paragraph with auto left/right margins */
 }
 
