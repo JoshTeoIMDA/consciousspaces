@@ -48,13 +48,8 @@
     color: #4CAF50;
 }
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    background-image: url('C:\Users\conta\Desktop\Tech Up 3\images\abstract-pink-blue-gradient-background-with-soft-white-hills-bokeh'); /* Link to your background image */
-    background-size: cover;       /* Ensures the image covers the entire background */
-    background-position: center;  /* Centers the image */
-    background-attachment: fixed; /* Keeps the image fixed when scrolling */
-    color: #333;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
