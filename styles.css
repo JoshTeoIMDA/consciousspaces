@@ -27,3 +27,33 @@ main {
     padding: 2em;
     text-align: center;
 }
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px; /* Slightly larger font */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Off-white background */
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
