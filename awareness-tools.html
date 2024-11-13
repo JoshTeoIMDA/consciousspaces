@@ -6,7 +6,7 @@
     <title>Awareness Tools - Conscious Spaces</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body  class="page-background"></body>
+<body class="page-background">
     <header>
         <h1>Awareness Tools</h1>
         <nav>
@@ -17,11 +17,109 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <main>
-        <h2>Assess Your Current State</h2>
-        <button onclick="trackMood()">Track Your Mood</button>
-        <p id="mood-output"></p>
+        <h2>Daily Check-In: Work and Personal Life</h2>
+        <p>Reflect on your well-being by answering these questions about work and personal life.</p>
+
+        <!-- Check-in Form in Grid Layout -->
+        <form id="checkin-form" class="grid-form">
+            <!-- Each question in a "card" layout -->
+            <div class="question-card">
+                <label for="mood">1. How would you describe your overall mood today?</label>
+                <select id="mood" name="mood">
+                    <option value="Happy">Happy</option>
+                    <option value="Stressed">Stressed</option>
+                    <option value="Anxious">Anxious</option>
+                    <option value="Neutral">Neutral</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="workload">2. How manageable does your current workload feel?</label>
+                <select id="workload" name="workload">
+                    <option value="Overwhelming">Overwhelming</option>
+                    <option value="Manageable">Manageable</option>
+                    <option value="Light">Light</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="energy">3. What is your energy level today?</label>
+                <select id="energy" name="energy">
+                    <option value="Low">Low</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="relationships">4. How positive are your personal relationships today?</label>
+                <select id="relationships" name="relationships">
+                    <option value="Strained">Strained</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Supportive">Supportive</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="stress">5. How would you rate your overall stress level today?</label>
+                <select id="stress" name="stress">
+                    <option value="Low">Low</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="productivity">6. How productive have you felt at work today?</label>
+                <select id="productivity" name="productivity">
+                    <option value="Low">Low</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="sleep">7. How well did you sleep last night?</label>
+                <select id="sleep" name="sleep">
+                    <option value="Poor">Poor</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="social">8. How would you describe your social interactions today?</label>
+                <select id="social" name="social">
+                    <option value="Limited">Limited</option>
+                    <option value="Positive">Positive</option>
+                    <option value="Overwhelming">Overwhelming</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="balance">9. How balanced does your work-life feel today?</label>
+                <select id="balance" name="balance">
+                    <option value="Unbalanced">Unbalanced</option>
+                    <option value="Somewhat Balanced">Somewhat Balanced</option>
+                    <option value="Very Balanced">Very Balanced</option>
+                </select>
+            </div>
+
+            <div class="question-card">
+                <label for="gratitude">10. How grateful do you feel today?</label>
+                <select id="gratitude" name="gratitude">
+                    <option value="Not at all">Not at all</option>
+                    <option value="Somewhat">Somewhat</option>
+                    <option value="Very">Very</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="submitCheckIn()">Submit</button>
+        </form>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
