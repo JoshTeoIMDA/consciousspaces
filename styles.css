@@ -171,3 +171,24 @@ main p {
     max-width: 600px; /* Limits paragraph width for better readability */
     margin: 10px auto; /* Centers the paragraph with auto left/right margins */
 }
+
+
+
+
+
+
+
+
+/* Background image for all pages except index */
+.page-background {
+    background-image: url('images/background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333; /* Adjust text color if necessary for readability */
+}
+
+/* Optional: Padding to avoid text overlapping with background */
+.page-background main {
+    padding: 20px;
+}
