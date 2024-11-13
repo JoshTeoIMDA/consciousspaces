@@ -103,8 +103,8 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 10px;
-    padding: 20px;
+    gap: 5px;
+    padding: 0px;
 }
 
 .resource-card {
@@ -115,7 +115,7 @@ header nav a {
     width: 400px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-    margin: 30px; /* Adjust margin to control space around each card */
+    margin: 2px; /* Adjust margin to control space around each card */
 }
 
 .resource-card:hover {
