@@ -6,9 +6,9 @@
     <title>Contact - Conscious Spaces</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body  class="page-background"></body>
+<body class="page-background"></body>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Contact</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="awareness-tools.html">Awareness Tools</a>
@@ -18,9 +18,59 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
-        <h2>Get Help</h2>
-        <p>Contact our mental health professionals for support.</p>
+
+    <main class="contact-page">
+        <div class="contact-layout">
+            <!-- Contact Form Section (Get in Touch) -->
+            <section class="contact-form-section">
+                <h2>Get in Touch</h2>
+                <p>If you need help connecting with a therapist or would like resources from mental health organizations, please fill out the form below.</p>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="request">I would like to:</label>
+                    <select id="request" name="request" required>
+                        <option value="therapist">Connect with a Therapist</option>
+                        <option value="organization">Get Resources from an Organization</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- Information Section with Organizations and Therapist Directory -->
+            <div class="info-sections">
+                <!-- Mental Health Organizations Section -->
+                <section class="organizations-section">
+                    <h2>Mental Health Organizations in Singapore</h2>
+                    <p>Contact local mental health organizations for support and resources.</p>
+                    <ul>
+                        <li><a href="https://www.sos.org.sg" target="_blank">Samaritans of Singapore (SOS)</a> - 24/7 emotional support and suicide prevention services. Hotline: 1767</li>
+                        <li><a href="https://www.chat.mentalhealth.sg" target="_blank">Community Health Assessment Team (CHAT)</a> - Mental health resources and assessment for youths aged 16 to 30.</li>
+                        <li><a href="https://www.silverribbonsingapore.com" target="_blank">Silver Ribbon (Singapore)</a> - Promotes mental health awareness and offers support services. Hotline: +65 6386 1928</li>
+                        <li><a href="https://www.reach.org.sg" target="_blank">REACH Community Services</a> - Counseling and mental wellness services for families, youth, and seniors.</li>
+                    </ul>
+                </section>
+
+                <!-- Therapist Directory Section -->
+                <section class="therapist-directory">
+                    <h2>Find a Therapist in Singapore</h2>
+                    <p>Explore a directory of licensed therapists in Singapore. Contact them directly for more information on services and appointments.</p>
+                    <ul>
+                        <li><a href="https://www.sgcounsellors.org.sg" target="_blank">Singapore Association for Counselling</a> - Directory of licensed counselors in Singapore.</li>
+                        <li><a href="https://www.psychotherapy.com.sg" target="_blank">Singapore Psychological Society</a> - Find certified psychologists in various specializations.</li>
+                        <li><a href="https://www.betterhelp.com" target="_blank">BetterHelp</a> - Access online therapy sessions with licensed professionals.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </main>
 </body>
 </html>
