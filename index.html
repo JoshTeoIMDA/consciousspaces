@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conscious Spaces</title>
+    <title>Welcome to Conscious Spaces</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Video -->
-    <video autoplay loop muted playsinline class="background-video">
-        <source src="video/background.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
 
-    <!-- Content Section -->
-    <div class="content">
-        <header>
-            <h1>Conscious Spaces</h1>
-            <nav>
-                <a href="index.html">Home</a>
-            <a href="awareness-tools.html">Awareness Tools</a>
-            <a href="results.html">Results</a>
-            <a href="activities.html">Activities</a>
-            <a href="community.html">Community</a>
-            <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-        <main>
-            <h2>Your Journey of Awareness Begins Here</h2>
-            <p>Conscious Spaces is a safe, supportive space designed for young adults to manage mental and emotional well-being.</p>
-        </main>
-    </div>
+    <!-- Hero Section with Background Video -->
+    <section class="hero">
+        <!-- Background Video -->
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="video/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Hero Content Overlay -->
+        <div class="hero-content">
+            <h2>Empowering Your Mental and Emotional Well-Being</h2>
+            <p>Join a community dedicated to mental wellness. Explore resources, connect with others, and find tools to help you on your journey.</p>
+
+            <!-- Explore Our Resources Section within Hero -->
+            <div class="quick-nav">
+                <h2>Explore Our Resources</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Awareness Tools</h3>
+                        <p>Assess your well-being and track your mood over time.</p>
+                        <a href="awareness-tools.html" class="card-button">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h3>Activities</h3>
+                        <p>Engage in activities designed to enhance your well-being.</p>
+                        <a href="activities.html" class="card-button">Explore Activities</a>
+                    </div>
+                    <div class="card">
+                        <h3>Community</h3>
+                        <p>Share your journey and connect with others.</p>
+                        <a href="community.html" class="card-button">Join the Community</a>
+                    </div>
+                    <div class="card">
+                        <h3>Contact</h3>
+                        <p>Get in touch with mental health professionals or find support resources.</p>
+                        <a href="contact.html" class="card-button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
-

@@ -152,7 +152,7 @@ header nav a {
 }
 
 .read-more:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: teal; /* Darker green on hover */
 }
 
 
@@ -254,7 +254,7 @@ button {
     grid-column: span 2;
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4CAF50;
+    background-color: teal;
     color: white;
     border: none;
     border-radius: 5px;
@@ -264,7 +264,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: teal;
 }
 
 
@@ -311,7 +311,7 @@ button:hover {
 .awareness-tools button {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4CAF50;
+    background-color: teal;
     color: white;
     border: none;
     border-radius: 5px;
@@ -320,7 +320,7 @@ button:hover {
 }
 
 .awareness-tools button:hover {
-    background-color: #45a049;
+    background-color: teal;
 }
 
 .awareness-tools .results-section {
@@ -483,7 +483,7 @@ button:hover {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4CAF50;
+    background-color: teal;
     color: white;
     border: none;
     border-radius: 5px;
@@ -491,7 +491,7 @@ button:hover {
 }
 
 .send-to-self button:hover {
-    background-color: #45a049;
+    background-color: teal;
 }
 
 
@@ -533,7 +533,7 @@ button:hover {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4CAF50;
+    background-color: teal;
     color: white;
     border: none;
     border-radius: 5px;
@@ -541,7 +541,7 @@ button:hover {
 }
 
 .send-to-self button:hover {
-    background-color: #45a049;
+    background-color: teal;
 }
 
 
@@ -614,7 +614,7 @@ button:hover {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4CAF50;
+    background-color: teal;
     color: white;
     border: none;
     border-radius: 5px;
@@ -622,7 +622,7 @@ button:hover {
 }
 
 .send-to-self button:hover {
-    background-color: #45a049;
+    background-color: teal;
 }
 
 
@@ -841,7 +841,7 @@ h2 {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4CAF50;
+    background-color: teal;
     color: white;
     border: none;
     border-radius: 5px;
@@ -849,7 +849,7 @@ h2 {
 }
 
 #contactForm button:hover {
-    background-color: #45a049;
+    background-color: teal;
 }
 
 .organizations-section ul,
@@ -1087,3 +1087,104 @@ h2 {
     max-height: 245px; /* Optional: Limit max height */
 }
 
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section with Background Video */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Background Video Styling */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.2; /* Slight opacity for readability of overlay text */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1; /* Place content above the video */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px auto;
+    color: black;
+}
+
+/* Quick Navigation Section within Hero */
+.quick-nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Two-by-Two Grid Layout for Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    background-color: teal;
+}
