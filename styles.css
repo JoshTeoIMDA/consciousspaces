@@ -698,3 +698,70 @@ button:hover {
     color: #555;
     margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+/* Standardized <h2> styling for all pages */
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.community-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.category h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.items-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px; /* Space between categories */
+}
+
+.item-card {
+    flex: 1;
+    max-width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.item-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+.item-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a polished look */
+}
