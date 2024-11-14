@@ -266,3 +266,361 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Centralized Layout for Awareness Tools Page Only */
+.awareness-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+.awareness-tools .centered-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.awareness-tools .question {
+    width: 100%;
+    text-align: left;
+}
+
+.awareness-tools select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.awareness-tools button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.awareness-tools button:hover {
+    background-color: #45a049;
+}
+
+.awareness-tools .results-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+.results-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.result-category {
+    font-size: 2em; /* Larger font for readability */
+    margin: 20px 0;
+}
+
+.result-category span {
+    font-size: 3em; /* Larger icon size */
+}
+
+
+
+.results-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.result-category {
+    font-size: 2em; /* Larger font for readability */
+    margin: 20px 0;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #f9f9f9; /* Light contrasting background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.result-category span {
+    font-size: 3em; /* Larger icon size */
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.results-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    gap: 20px; /* Space between result boxes */
+}
+
+.result-category {
+    font-size: 1.5em; /* Adjust font size if needed */
+    padding: 20px;
+    width: 200px; /* Set a fixed width for uniform boxes */
+    background-color: #f9f9f9; /* Light contrasting background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-category span {
+    font-size: 2.5em; /* Icon size */
+    margin-bottom: 10px;
+}
+
+
+
+
+.results-page {
+    display: flex;
+    flex-direction: row; /* Force items to align in a row */
+    align-items: flex-start;
+    gap: 20px; /* Space between result boxes */
+    padding: 50px;
+}
+
+.result-category {
+    font-size: 1.5em;
+    padding: 50px;
+    width: 300px; /* Fixed width for uniform box sizes */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-category span {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.send-to-self {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.send-to-self h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.send-to-self label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.send-to-self input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.send-to-self button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-to-self button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.send-to-self {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.send-to-self h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.send-to-self label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.send-to-self input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.send-to-self button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-to-self button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.results-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.results-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 0px; /* Space between results row and send-to-self section */
+}
+
+.result-category {
+    font-size: 1.5em;
+    padding: 10px;
+    width: 200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-category span {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.send-to-self {
+    width: auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.send-to-self h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.send-to-self label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.send-to-self input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.send-to-self button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-to-self button:hover {
+    background-color: #45a049;
+}

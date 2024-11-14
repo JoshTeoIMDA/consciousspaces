@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-In Results - Conscious Spaces</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-background"></body>
+    <header>
+        <h1>Your Check-In Results</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="awareness-tools.html">Awareness Tools</a>
+            <a href="results.html">Results</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="results-page">
+        <!-- Results Row -->
+        <div class="results-row">
+            <div id="emotionalResult" class="result-category"></div>
+            <div id="mentalResult" class="result-category"></div>
+            <div id="workResult" class="result-category"></div>
+        </div>
+
+        <!-- Send to Self Form -->
+        <section class="send-to-self">
+            <h2>Send Results to Yourself</h2>
+            <form id="sendForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <button type="submit">Send Results</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="results.js"></script>
+</body>
+</html>
